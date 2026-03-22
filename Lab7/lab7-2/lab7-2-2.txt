@@ -1,0 +1,29 @@
+Questions:
+
+Calculate the Need matrix:
+     A  B  C
+P0:  _  _  _
+P1:  _  _  _
+P2:  _  _  _
+P3:  _  _  _
+Is the system in a safe state? If yes, provide a safe sequence:
+Your Answer: _______________________________________________
+If P2 requests (0, 1, 1), should the request be granted?
+Your Answer: _______________________________________________
+Answer
+1. Need Matrix:
+
+     A  B  C
+P0:  2  2  1
+P1:  2  1  1
+P2:  2  2  2
+P3:  2  2  2
+2. Safe State: Yes, safe sequence exists: P1 → P3 → P0 → P2
+
+3. P2 request (0,1,1):
+
+Check: (0,1,1) ≤ (2,2,2) ✓
+Check: (0,1,1) ≤ (2,3,2) ✓
+After allocation: Available = (2,2,1)
+Safe sequence still exists: P1 → P3 → P2 → P0
+Request should be GRANTED
